@@ -1,9 +1,12 @@
+//import $ from 'jquery';
+import './styles.css';
+import "bootstrap";
+
+
 export class WeatherService {
   async getWeatherByCity(city) {
     try {
-      let response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`
-      );
+      let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`);
       let jsonifiedResponse;
       if (response.ok && response.status == 200) {
         jsonifiedResponse = await response.json();
@@ -11,7 +14,7 @@ export class WeatherService {
         jsonifiedResponse = false;
       }
       return jsonifiedResponse;
-    } catch (e) {
+    } catch(error) {
       return false;
     }
   }
