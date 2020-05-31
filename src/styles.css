@@ -56,7 +56,7 @@ button:active {
   border: 2px solid rgb(76, 160, 175);
   margin: 30px;
   padding: 20px;
-  width: 300px;
+  width: 600px;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
   box-shadow: 0 0 0 10px hsl(0, 5%, 36%), 0 0 0 15px hsl(0, 0%, 90%);
   border-radius: 10px;

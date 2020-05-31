@@ -3,6 +3,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="weather-interface.js"></script> -->
+    <script src="/src/js/scripts.js"></script>
     <title>Weather</title>
   </head>
   <body>
@@ -27,18 +28,19 @@
       <div class="container22">
         <h1>Search For a GIF</h1>
     </div>
+    <br>
     <hr>
     <form>
       <label for="search">Search</label>
       <input id="search" type="text" />
       <button id="btnSearch">Go</button>
     </form>
+    <div class="container3">
     <div class="out"></div>
+  </div>
   </main>
-  <script>
+  <!-- <script>
     let APIKEY = "nydT33tIYBrmuNCtjIfmyzK5ITms8juz";
-    // you will need to get your own API KEY
-    // https://developers.giphy.com/dashboard/
     document.addEventListener("DOMContentLoaded", init);
     function init() {
       document.getElementById("btnSearch").addEventListener("click", ev => {
@@ -50,7 +52,7 @@
         fetch(url)
           .then(response => response.json())
           .then(content => {
-            //  data, pagination, meta
+            
             console.log(content.data);
             console.log("META", content.meta);
             let fig = document.createElement("figure");
@@ -70,6 +72,6 @@
           });
       });
     }
-  </script>
+  </script> -->
   </body>
 </html>
